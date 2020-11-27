@@ -1,0 +1,33 @@
+{
+  "name": "newsappserver",
+  "version": "1.0.0",
+  "description": "This is the server application for news api",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Suvechhya Banerjee",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.7",
+    "@babel/node": "^7.12.6",
+    "@babel/preset-env": "^7.12.7",
+    "eslint": "^7.14.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "nodemon": "^2.0.6",
+    "prettier": "^2.2.0"
+  },
+  "dependencies": {
+    "@elastic/elasticsearch": "^7.10.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "es6": "npm:@elastic/elasticsearch@^6.8.8",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "newsapi": "^2.4.1"
+  }
+}
