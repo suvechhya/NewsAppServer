@@ -1,6 +1,8 @@
 import NewsAPI from 'newsapi';
 
 const newsapi = new NewsAPI('16ab712f0cc347288027532b72106a38');
+
+/* Search API returns back top headlines as well as all news */
 exports.search = async (req, res, next) => {
   const { keyword, page } = req.query;
   try {
@@ -26,6 +28,7 @@ exports.search = async (req, res, next) => {
   }
 };
 
+/* Initial API returns only topHeadlines for UK(GB) */
 exports.topHeadlinesForUk = async (req, res, next) => {
   const { keyword, page } = req.query;
   try {
