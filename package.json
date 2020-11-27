@@ -4,7 +4,7 @@
   "description": "This is the server application for news api",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node index.js",
+    "start": "babel-node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Suvechhya Banerjee",
